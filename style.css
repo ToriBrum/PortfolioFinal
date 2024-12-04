@@ -6,3 +6,14 @@
     padding: 0;
     margin: 0;
 }
+
+:root{
+    --cor-fundo: #441752;
+    --cor-secao: #FFB22C;
+    --cor-titulo: #B60071;
+    --cor-titulo-texto: #E4003A;
+    --cor-texto: #AB4459;
+    --fonte-principal: 'Krona One';
+    --fonte-texto: 'Montserrat', sans-serif;
+    --fonte-cabecalho: 'Fredericka the Great';
+}
