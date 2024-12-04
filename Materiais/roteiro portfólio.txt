@@ -1,5 +1,5 @@
 Paleta de cores:
-#21051c
+#21051c 
 #cf4652
 #fab894
 #20041b
