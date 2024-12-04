@@ -1,0 +1,25 @@
+Paleta de cores:
+#21051c
+#cf4652
+#fab894
+#20041b
+#7c1430
+#51081f
+
+Menu de navegação:
+Home
+Sobre mim
+Contate-me
+
+
+Página inicial:
+"$ltOlá, mundo!/$gt Sou Tori, uma desenvolvedora front-end apaixonada por criar interfaces intuitivas e visuais impactantes. Aqui você encontrará meus projetos mais recentes e um pouco sobre minha jornada criativa. Pronto para se inspirar? Explore meu portfólio!"
+
+Me encontre:
+Instagram - *criar*
+GitHub - https://github.com/ToriBrum/
+LinkedIn - https://www.linkedin.com/in/vict%C3%B3ria-silva-19bbb5163/
+Email - victoria.brum.14@gmail.com
+
+
+Portfólio web. Direitos reservados $copy.
