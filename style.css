@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
+*{
+    margin:0;
+    padding: 0;
+}
+
 :root{
     --cor-fundo: #441752;
     --cor-secao: #FFB22C;
@@ -11,4 +16,147 @@
     --fonte-principal: 'Krona One';
     --fonte-texto: 'Montserrat', sans-serif;
     --fonte-cabecalho: 'Fredericka the Great';
+}
+
+body{
+    padding: 6% 13% 60px;
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    box-sizing: border-box;
+}
+
+.header{
+    font-family:var(--fonte-cabecalho);
+    color: var(--cor-titulo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(243, 254, 184, .10);
+    border-radius: 40px; */
+}
+
+.header__titulo{
+    font-size: 75px;
+}
+
+.header__titulo__texto{
+    font-size: 25px;
+}
+
+.menu {
+    display: flex; /* Alinha os itens na horizontal */
+    flex-direction: row; /* Garante que os itens fiquem lado a lado */
+    position: absolute; /* Posiciona o menu no canto superior direito */
+    top: 0; /* Alinha ao topo */
+    right: 0; /* Alinha à direita */
+    padding: 10px; /* Espaçamento interno */
+    background-color: yellow; /* Apenas para visualização */
+}
+
+.menu ul {
+    display: flex; /* Aplica o comportamento de flex no <ul> */
+    margin: 0; /* Remove margens padrão do <ul> */
+    padding: 0; /* Remove padding padrão do <ul> */
+    list-style: none; /* Remove os marcadores de lista */
+}
+
+.menu li {
+    margin: 0 10px; /* Espaçamento entre os itens */
+}
+
+.menu a {
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 24px; /* Ajusta o tamanho da fonte */
+    color: white; /* Cor do texto */
+    background-color: blue; /* Fundo do link */
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Opcional: arredonda as bordas */
+}
+
+.menu a:hover {
+    background-color: darkblue; /* Cor de fundo ao passar o mouse */
+}
+
+/* Container principal da seção de apresentação */
+.apresentacao {
+    display: flex; /* Torna o contêiner flexível */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    justify-content: space-between; /* Coloca espaço entre texto e imagem */
+    gap: 20px; /* Espaçamento entre texto e imagem */
+    padding: 4% 10%; /* Espaçamento interno */
+    background-color: var(--cor-secao); /* Fundo da seção */
+    border-radius: 20px;
+}
+
+/* Conteúdo textual da apresentação */
+.apresentacao__conteudo {
+    max-width: 500px; /* Limita a largura do conteúdo */
+    display: flex;
+    flex-direction: column; /* Alinha o texto e links na vertical */
+    gap: 20px; /* Espaço entre os elementos */
+}
+
+/* Título e texto */
+.apresentacao__conteudo__titulo {
+    font-family: var(--fonte-principal);
+    font-size: 26px;
+    color: var(--cor-titulo-texto);
+}
+
+.apresentacao__conteudo__titulo__texto {
+    font-family: var(--fonte-texto);
+    font-size: 17px;
+    color: var(--cor-texto);
+}
+
+/* Estilo da imagem */
+.apresentacao img {
+    max-width: 400px; /* Tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção */
+    align-self: flex-start; /* Alinha a imagem ao topo do texto */
+    border-radius: 200px;
+}
+
+/* Links de redes sociais */
+.redes__links {
+    display: flex;
+    flex-direction: column; /* Links em coluna */
+    gap: 10px; /* Espaço entre os links */
+}
+
+.redes__links__titulo {
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+}
+
+.redes__links__link {
+    text-decoration: none;
+    color: white;
+    background-color: magenta;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.redes__links a:hover{
+    background-color: purple;
+}
+
+.rodape__texto{
+    color: var(--cor-secao);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor-titulo);
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonte-texto);
+    font-size: 24px;
+    font-weight: 400;
 }
