@@ -26,10 +26,6 @@ body{
     box-sizing: border-box;
 }
 
-strong{
-
-}
-
 .header{
     font-family:var(--fonte-cabecalho);
     color: var(--cor-titulo);
@@ -87,8 +83,9 @@ strong{
 
 /* Container principal da seção de apresentação */
 .apresentacao {
+    width: 800px;
     display: flex; /* Torna o contêiner flexível */
-    align-items: flex-start; /* Alinha os itens ao topo */
+    align-items: center; /* Alinha os itens ao topo */
     justify-content: space-between; /* Coloca espaço entre texto e imagem */
     gap: 20px; /* Espaçamento entre texto e imagem */
     padding: 4% 10%; /* Espaçamento interno */
@@ -104,6 +101,8 @@ strong{
     gap: 20px; /* Espaço entre os elementos */
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
     background-color: green;
+    padding: 20px; /* Adiciona padding interno */
+    box-sizing: border-box; /* Inclui padding no tamanho total */
 }
 
 /* Título e texto */
@@ -112,6 +111,7 @@ strong{
     font-size: 26px;
     color: var(--cor-titulo-texto);
     background-color: yellow;
+    margin-bottom: 10px; /* Adiciona margem inferior */
 }
 
 .apresentacao__conteudo__titulo__texto {
@@ -153,8 +153,9 @@ strong{
 .apresentacao__imagem {
     max-width: 400px; /* Tamanho máximo da imagem */
     height: auto; /* Mantém a proporção */
-    align-self: flex-start; /* Alinha a imagem ao topo do texto */
     border-radius: 200px;
+    display: flex;
+    
 }
 
 .rodape{
