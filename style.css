@@ -87,7 +87,6 @@ body{
     gap: 20px; /* Espaçamento entre texto e imagem */
     padding: 4% 10%; /* Espaçamento interno */
     background-color: var(--cor-secao); /* Fundo da seção */
-    border-radius: 20px;
 }
 
 /* Conteúdo textual da apresentação */
@@ -149,8 +148,8 @@ body{
 
 .rodape__texto{
     color: var(--cor-secao);
-    position: fixed;
-    bottom: 0;
+    position: relative; /* Posiciona o rodapé em relação aos seus elementos pais */
+    bottom: 0; /* Posiciona o rodapé na parte inferior do elemento pai */
     left: 0;
     width: 100%;
     background-color: var(--cor-titulo);
