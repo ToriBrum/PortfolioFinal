@@ -10,7 +10,7 @@
 :root{
     --cor-fundo: #441752;
     --cor-secao: #FFB22C;
-    --cor-titulo: #B60071;
+    --cor-titulo: #ce3ebb;
     --cor-titulo-texto: #E4003A;
     --cor-texto: #AB4459;
     --fonte-principal: 'Krona One';
@@ -26,6 +26,10 @@ body{
     box-sizing: border-box;
 }
 
+strong{
+
+}
+
 .header{
     font-family:var(--fonte-cabecalho);
     color: var(--cor-titulo);
@@ -39,10 +43,13 @@ body{
 
 .header__titulo{
     font-size: 75px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .header__titulo__texto{
     font-size: 25px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .menu {
@@ -52,7 +59,7 @@ body{
     top: 0; /* Alinha ao topo */
     right: 0; /* Alinha à direita */
     padding: 10px; /* Espaçamento interno */
-    background-color: yellow; /* Apenas para visualização */
+    text-shadow: 2px 2px 4px rgba(227, 57, 190, 0.8);
 }
 
 .menu ul {
@@ -70,13 +77,12 @@ body{
     text-decoration: none; /* Remove o sublinhado */
     font-size: 24px; /* Ajusta o tamanho da fonte */
     color: white; /* Cor do texto */
-    background-color: blue; /* Fundo do link */
     padding: 5px 10px; /* Espaçamento interno */
     border-radius: 5px; /* Opcional: arredonda as bordas */
 }
 
 .menu a:hover {
-    background-color: darkblue; /* Cor de fundo ao passar o mouse */
+    background-color: #ff2fff; /* Cor de fundo ao passar o mouse */
 }
 
 /* Container principal da seção de apresentação */
@@ -87,14 +93,17 @@ body{
     gap: 20px; /* Espaçamento entre texto e imagem */
     padding: 4% 10%; /* Espaçamento interno */
     background-color: var(--cor-secao); /* Fundo da seção */
+    border-radius: 90px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Conteúdo textual da apresentação */
-.apresentacao__conteudo {
-    max-width: 500px; /* Limita a largura do conteúdo */
+.apresentacao__conteudo{
+    width: 500px; /* Limita a largura do conteúdo */
     display: flex;
     flex-direction: column; /* Alinha o texto e links na vertical */
     gap: 20px; /* Espaço entre os elementos */
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+    background-color: green;
 }
 
 /* Título e texto */
@@ -102,23 +111,16 @@ body{
     font-family: var(--fonte-principal);
     font-size: 26px;
     color: var(--cor-titulo-texto);
+    background-color: yellow;
 }
 
 .apresentacao__conteudo__titulo__texto {
     font-family: var(--fonte-texto);
     font-size: 17px;
     color: var(--cor-texto);
+    background-color: blue;
 }
 
-/* Estilo da imagem */
-.apresentacao img {
-    max-width: 400px; /* Tamanho máximo da imagem */
-    height: auto; /* Mantém a proporção */
-    align-self: flex-start; /* Alinha a imagem ao topo do texto */
-    border-radius: 200px;
-}
-
-/* Links de redes sociais */
 .redes__links {
     display: flex;
     flex-direction: column; /* Links em coluna */
@@ -127,7 +129,7 @@ body{
 
 .redes__links__titulo {
     font-family: var(--fonte-principal);
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .redes__links__link {
@@ -140,22 +142,31 @@ body{
     font-family: var(--fonte-texto);
     font-size: 16px;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(227, 57, 190, 0.8);
 }
 
 .redes__links a:hover{
     background-color: purple;
 }
 
-.rodape__texto{
+/* Estilo da imagem */
+.apresentacao__imagem {
+    max-width: 400px; /* Tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção */
+    align-self: flex-start; /* Alinha a imagem ao topo do texto */
+    border-radius: 200px;
+}
+
+.rodape{
     color: var(--cor-secao);
     position: relative; /* Posiciona o rodapé em relação aos seus elementos pais */
     bottom: 0; /* Posiciona o rodapé na parte inferior do elemento pai */
     left: 0;
-    width: 100%;
     background-color: var(--cor-titulo);
     text-align: center;
     padding: 10px;
     font-family: var(--fonte-texto);
     font-size: 24px;
     font-weight: 400;
+    margin-top: 20px;
 }
